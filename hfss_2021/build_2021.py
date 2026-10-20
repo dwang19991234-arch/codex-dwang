@@ -4,6 +4,7 @@
 import os
 import time
 import traceback
+import re
 import ScriptEnv
 
 PARAMETERS = {'air_H': 1000.0,
@@ -55,22 +56,22 @@ CUTS = [('LeadClearance',
    ('slot_D/2+slot_W/2', '-feed_W/2-gap'),
    ('slot_D/2+slot_W/2', 'feed_W/2+gap'),
    ('-slot_D/2-slot_W/2', 'feed_W/2+gap')]),
- ('Slot-1_upper',
+ ('SlotNeg_upper',
   [('(-1*slot_D/2)-slot_W/2', 'feed_W/2'),
    ('(-1*slot_D/2)+slot_W/2', 'feed_W/2'),
    ('(-1*slot_D/2)+slot_W/2', 'slot_L/2'),
    ('(-1*slot_D/2)-slot_W/2', 'slot_L/2')]),
- ('Slot-1_lower',
+ ('SlotNeg_lower',
   [('(-1*slot_D/2)-slot_W/2', '-slot_L/2'),
    ('(-1*slot_D/2)+slot_W/2', '-slot_L/2'),
    ('(-1*slot_D/2)+slot_W/2', '-feed_W/2'),
    ('(-1*slot_D/2)-slot_W/2', '-feed_W/2')]),
- ('Slot1_upper',
+ ('SlotPos_upper',
   [('(1*slot_D/2)-slot_W/2', 'feed_W/2'),
    ('(1*slot_D/2)+slot_W/2', 'feed_W/2'),
    ('(1*slot_D/2)+slot_W/2', 'slot_L/2'),
    ('(1*slot_D/2)-slot_W/2', 'slot_L/2')]),
- ('Slot1_lower',
+ ('SlotPos_lower',
   [('(1*slot_D/2)-slot_W/2', '-slot_L/2'),
    ('(1*slot_D/2)+slot_W/2', '-slot_L/2'),
    ('(1*slot_D/2)+slot_W/2', '-feed_W/2'),
@@ -154,6 +155,8 @@ def rect(x0, y0, x1, y1):
 
 
 def attributes(name, solve_inside=True, material='vacuum'):
+    if not re.match(r'^[A-Za-z][A-Za-z0-9_]*$', name):
+        raise ValueError('Invalid AEDT object name: ' + name)
     return ['NAME:Attributes', 'Name:=', name, 'Flags:=', '',
             'Color:=', '(220 165 45)', 'Transparency:=', 0,
             'PartCoordinateSystem:=', 'Global', 'UDMId:=', '',

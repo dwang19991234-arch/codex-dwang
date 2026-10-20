@@ -76,9 +76,10 @@ def layout():
                                             'slot_D/2+slot_W/2','feed_W/2+gap')))
     for side in [-1,1]:
         xc = f'({side}*slot_D/2)'
-        cuts.append((f'Slot{side}_upper', rectangle(xc+'-slot_W/2','feed_W/2',
+        slot_name = 'SlotNeg' if side < 0 else 'SlotPos'
+        cuts.append((f'{slot_name}_upper', rectangle(xc+'-slot_W/2','feed_W/2',
                                                    xc+'+slot_W/2','slot_L/2')))
-        cuts.append((f'Slot{side}_lower', rectangle(xc+'-slot_W/2','-slot_L/2',
+        cuts.append((f'{slot_name}_lower', rectangle(xc+'-slot_W/2','-slot_L/2',
                                                    xc+'+slot_W/2','-feed_W/2')))
     strips.append(('Lead', rectangle('lead_x','-lead_W/2','choke_x','lead_W/2')))
     for i in range(10):
