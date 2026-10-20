@@ -2,7 +2,9 @@
   "python_2_grammar": "passed using lib2to3 parser",
   "geometry_data": "exact match with earlier checked geometry",
   "native_api": "classic AEDT calls prepared; not executed",
-  "HFSS_2021R1_model_build": "not_run",
+  "HFSS_2021R1_model_build": "awaiting user rerun after fix",
   "HFSS_2021R1_solution": "not_run",
-  "reason": "AEDT/HFSS and commercial license unavailable in cloud"
+  "reason": "AEDT/HFSS and commercial license unavailable in cloud",
+  "user_2021R1_initial_run": "failed: vacuum sheet SolveInside=False rejected",
+  "vacuum_attribute_fix": "recorded-call regression check passed for sheet and box"
 }
