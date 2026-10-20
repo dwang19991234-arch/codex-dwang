@@ -10,6 +10,16 @@
 - [参数文件](hfss/parameters.json)
 - [结果绘图脚本](hfss/plot_results.py)
 
+## HFSS 2021 R1 用户
+
+请使用新增的 **AEDT 内置脚本**，不要运行 PyAEDT 脚本或安装其 requirements：
+
+1. [下载 HFSS_2021R1.zip](downloads/HFSS_2021R1.zip) 并解压。
+2. 在 HFSS 菜单 Tools → Run Script 中运行 `hfss_2021/build_2021.py`，只建模。
+3. 检查模型后，在同一设计中运行 `hfss_2021/solve_export_2021.py`，求解并导出报告。
+
+[2021 R1 详细说明](hfss_2021/README_2021R1.md)。原生脚本已通过 Python 2 语法和几何一致性检查，**尚未在 HFSS 2021 R1 实机验证**。
+
 ## 近似版图预览
 
 下图是建模预览，不是仿真场图或计算结果。
@@ -22,7 +32,7 @@
 
 ![论文图 2d 对照](hfss/reference_fig2d.png)
 
-## 本地运行
+## 新版 HFSS 的 PyAEDT 运行方式（不适用于 2021 R1）
 
 需要可用的 AEDT/HFSS 安装和许可证，推荐独立 CPython 3.11。详细的安装、建模、求解和收敛检查步骤见中文说明。
 

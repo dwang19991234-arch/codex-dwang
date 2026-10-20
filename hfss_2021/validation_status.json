@@ -1,0 +1,8 @@
+{
+  "python_2_grammar": "passed using lib2to3 parser",
+  "geometry_data": "exact match with earlier checked geometry",
+  "native_api": "classic AEDT calls prepared; not executed",
+  "HFSS_2021R1_model_build": "not_run",
+  "HFSS_2021R1_solution": "not_run",
+  "reason": "AEDT/HFSS and commercial license unavailable in cloud"
+}

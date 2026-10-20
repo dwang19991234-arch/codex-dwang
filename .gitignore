@@ -9,3 +9,5 @@ __pycache__/
 hfss/model_*/
 hfss/run_*/
 hfss/preview/
+hfss_2021/run_*/
+hfss_2021/results_*/
