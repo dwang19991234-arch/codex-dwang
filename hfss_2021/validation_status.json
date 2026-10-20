@@ -2,11 +2,14 @@
   "python_2_grammar": "passed using lib2to3 parser",
   "geometry_data": "exact match with earlier checked geometry",
   "native_api": "classic AEDT calls prepared; not executed",
-  "HFSS_2021R1_model_build": "awaiting rerun after object name fix",
+  "HFSS_2021R1_model_build": "awaiting standalone numeric script rerun",
   "HFSS_2021R1_solution": "not_run",
   "reason": "AEDT/HFSS and commercial license unavailable in cloud",
   "user_2021R1_initial_run": "failed: vacuum sheet SolveInside=False rejected",
   "vacuum_attribute_fix": "recorded-call regression check passed for sheet and box",
   "user_2021R1_second_run": "failed: Slot-1_upper invalid object name",
-  "object_name_fix": "all geometry names checked: letters, numbers, underscores; unique"
+  "object_name_fix": "all geometry names checked: letters, numbers, underscores; unique",
+  "user_2021R1_third_run": "symbolic integration line rejected as zero length",
+  "port_fix": "explicit numeric endpoints -3um to +3um",
+  "numerical_geometry": "all polygon coordinates match earlier geometry exactly"
 }
