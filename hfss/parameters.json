@@ -1,0 +1,23 @@
+{
+  "slot_L": 260.0,
+  "slot_W": 12.0,
+  "slot_D": 125.0,
+  "feed_W": 12.0,
+  "gap": 6.0,
+  "det_gap": 6.0,
+  "choke_L": 120.0,
+  "low_W": 110.0,
+  "high_W": 12.0,
+  "taper_L": 130.0,
+  "lead_L": 250.0,
+  "lead_W": 60.0,
+  "lead_gap": 31.0,
+  "chip_right": 350.0,
+  "chip_half_y": 400.0,
+  "margin": 900.0,
+  "air_H": 1000.0,
+  "si_H": 1000.0,
+  "epsilon_si": 11.7,
+  "sigma_si": 1.0,
+  "port_ohm": 1000.0
+}

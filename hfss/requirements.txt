@@ -1,0 +1,2 @@
+pyaedt==0.18.1
+matplotlib>=3.7,<4

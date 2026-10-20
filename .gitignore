@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.aedt
+*.aedt.lock
+*.aedtresults/
+*.asol
+*.log
+hfss/model_*/
+hfss/run_*/
+hfss/preview/

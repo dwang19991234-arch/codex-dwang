@@ -1,0 +1,9 @@
+{
+  "python_syntax": "passed",
+  "geometry_preview": "generated",
+  "geometry_connectivity": "passed, 1 um raster approximation",
+  "pyaedt_api": "keyword arguments checked against 0.18.1 wheel source",
+  "aedt_model_creation": "not_run; HFSS unavailable in cloud",
+  "electromagnetic_solution": "not_run",
+  "reference_images": "Extracted from user-provided paper, not simulation outputs"
+}

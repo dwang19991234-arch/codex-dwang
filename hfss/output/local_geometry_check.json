@@ -1,0 +1,9 @@
+{
+  "raster_pitch_um": 1,
+  "metal_connected_components": 2,
+  "port_conductors_distinct": true,
+  "right_feed_connected_to_ground": true,
+  "left_feed_connected_through_choke": true,
+  "port_gap_clear": true,
+  "limitation": "2D raster topology only, not AEDT Boolean or solver validation"
+}
