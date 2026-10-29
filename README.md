@@ -1,5 +1,12 @@
 # 石墨烯双槽天线：论文图 2d 的 HFSS 近似复现
 
+## 中文PPT：结构设计与仿真思路
+
+[42页 PowerPoint](presentations/Graphene_THz_HFSS_Simulation_Guide.pptx) · [PDF预览](presentations/Graphene_THz_HFSS_Simulation_Guide.pdf) · [目录与讲解备注](presentations/README.md)
+
+包含论文依据、HFSS逐项设置的原因、用户扫参结果和复现条件核对，明确区分旧模型结果与尚未求解的新版。
+
+
 ## 当前建议：先核对论文中的有限 GSG 版图
 
 旧版大矩形地模型与论文显微图存在差异，其槽长扫描不能视为原文数据复现。已单独加入 [论文版图核对版](paper_layout_2021/README_中文.md)：
