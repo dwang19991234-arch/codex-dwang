@@ -1,0 +1,12 @@
+{
+  "2D_components": 2,
+  "left_GSG_pad_gaps_open": true,
+  "signal_continuity": true,
+  "port_gap_clear": true,
+  "ground_return_connected": true,
+  "oxide_thickness_um": 0.3,
+  "radiation_faces_expected": 14,
+  "HFSS_model_build": "not_run",
+  "HFSS_solution": "not_run",
+  "scope": "1 um raster geometry check, not electromagnetic validation"
+}
