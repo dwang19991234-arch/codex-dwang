@@ -1,0 +1,15 @@
+{
+  "nominal_geometry_matches_previous_model": true,
+  "HFSS_coordinate_expressions_reference_all_three_variables": true,
+  "geometric_constraints_checked": 125,
+  "raster_connectivity_cases": 21,
+  "raster_pitch_um": 4,
+  "port_integration_line_fixed": [
+    "-3um",
+    "3um"
+  ],
+  "python2_grammar": "passed",
+  "HFSS_runtime": "not_executed",
+  "HFSS_Optimetrics_API": "prepared using native schema; not runtime-validated",
+  "scope": "Geometry and syntax checks do not establish solver or sweep readiness in AEDT."
+}

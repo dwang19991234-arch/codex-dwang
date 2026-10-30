@@ -1,5 +1,12 @@
 # 石墨烯双槽天线：论文图 2d 的 HFSS 近似复现
 
+## 参数化研究：固定端口、独立扫描槽长/槽距/相对位置
+
+[完整单文件脚本](parametric_paper_2021/build_parametric_2021.py) · [操作说明](parametric_paper_2021/README_中文.md) · [参数预览](parametric_paper_2021/parameter_preview.png) · [下载包](downloads/HFSS_parametric_2021.zip)
+
+默认坐标保持已跑通的有限GSG模型不变，加入真正驱动几何的3个变量和3组独立一维扫描；端口仍固定在x=0。建议先验算名义基线，再只跑5组槽长。新脚本尚未在HFSS实机运行。
+
+
 ## 中文PPT：结构设计与仿真思路
 
 [42页 PowerPoint](presentations/Graphene_THz_HFSS_Simulation_Guide.pptx) · [PDF预览](presentations/Graphene_THz_HFSS_Simulation_Guide.pdf) · [目录与讲解备注](presentations/README.md)
